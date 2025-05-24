@@ -139,6 +139,44 @@ ROS 1 used a centralized ROS Master for node registration and communication setu
 - Easier deployment across multiple machines
 - Enhanced security and discovery features
 
+# 🧭 Discovery Server in ROS 2
+
+A **Discovery Server** in ROS 2 acts like a **matchmaker for nodes**. It is a **centralized mechanism** that helps nodes find each other more efficiently during the discovery process.
+
+---
+
+## ❓ Why Do We Need It?
+
+In ROS 2, nodes need to **discover each other** in order to **share data**—publishers must find subscribers and vice versa.
+
+- The Discovery Server simplifies this process by acting as a **central registry**.
+- Once a node registers with the server, the server helps it **find matching publishers or subscribers**.
+- After discovery, nodes **communicate directly** with each other, maintaining the advantages of **peer-to-peer communication**.
+
+---
+
+## 🤔 Why Use a Discovery Server if We Already Have Peer-to-Peer Communication?
+
+That’s a great question!
+
+While peer-to-peer discovery works, it involves **broadcasting discovery messages to all nodes**, which:
+
+- Increases **startup time**
+- Adds **network traffic**, especially in large-scale systems
+
+With a Discovery Server:
+
+- Nodes **register themselves** upon startup
+- When a new node joins, it can **quickly find matches** through the server
+- This approach **speeds up the discovery process** and **reduces network load**
+
+---
+
+## ✅ Benefits of Using a Discovery Server
+
+- Only a **single firewall port** is needed for the server, simplifying security and access
+- Ensures **fast system startup**
+- Reduces **network traffic**, improving scalability and efficiency
 
 
 
