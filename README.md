@@ -39,14 +39,14 @@ DDS supports customizable **QoS policies**, which give fine-grained control over
 
 # 🛰️ What is UDP (User Datagram Protocol)?
 
-**UDP (User Datagram Protocol)** is one of the core communication protocols in the **Internet Protocol (IP) suite**. It is widely used in systems where **speed and low latency** are more critical than guaranteed delivery.
+**UDP (User Datagram Protocol)** is one of the core communication protocols in the **Internet Protocol (IP) suite**. It is widely used in systems where **speed and latency** are more critical than guaranteed delivery.
 
 ---
 
 ## ✅ Key Characteristics
 
 ### 🔹 Connectionless Protocol
-UDP does **not establish a connection** before transmitting data. It simply sends packets (called _datagrams_) directly to the recipient without a handshake process like TCP.  
+UDP does **not establish a connection** before transmitting data. It simply sends packets (called _datagrams_) directly to the recipient.  
 This reduces overhead and allows for **faster communication**.
 
 ### 🔹 Faster but Less Reliable
