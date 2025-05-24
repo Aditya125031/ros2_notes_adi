@@ -37,6 +37,35 @@ DDS supports customizable **QoS policies**, which give fine-grained control over
 | **Durability**  | Controls if messages are saved for late-joining subscribers. |
 | **History**     | Defines how many old messages are retained and delivered. |
 
+# 🌐 What is TCP (Transmission Control Protocol)
+
+**TCP** is a connection-based, reliable communication protocol. It is generally used in scenarios where latency is not a major concern, but guaranteed delivery of data is essential.
+
+---
+
+## 🔑 Key Features
+
+### 🔗 Connection-Oriented
+- Unlike UDP, **TCP establishes a connection** before transmitting data.
+- This is done using a **three-way handshake**, ensuring that both the sender and receiver are ready for communication.
+
+### ✅ Reliability
+- Ensures that **all packets arrive in the correct order** and are **not duplicated**.
+- **Retransmits lost or corrupted packets** automatically.
+
+### 📶 Byte Stream
+- Data is transmitted as a **continuous stream of bytes**, rather than discrete packets.
+
+---
+
+## 🔐 TCP in Action: Real-Life Use Cases
+
+- **HTTP/HTTPS** – Web browsing  
+- **SSH** – Remote access to servers  
+- **FTP/SFTP** – File transfers  
+- **Email protocols** – Such as SMTP, IMAP  
+- **ROS 1** – Used **TCPROS**, a custom TCP-based protocol for ROS messaging
+- 
 # 🛰️ What is UDP (User Datagram Protocol)?
 
 **UDP (User Datagram Protocol)** is one of the core communication protocols in the **Internet Protocol (IP) suite**. It is widely used in systems where **speed and latency** are more critical than guaranteed delivery.
