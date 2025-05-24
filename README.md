@@ -73,6 +73,48 @@ UDP is often used in applications where **real-time data transmission** is cruci
 
 These applications prioritize **speed and responsiveness** over perfect accuracy. A few lost packets are tolerable, but **delays are not**.
 
+# 🔗 Peer-to-Peer Communication
+
+**Peer-to-Peer (P2P) communication** is a decentralized communication model where **each node can act as both a client and a server**. This allows nodes to **send and receive messages directly**, without relying on a central node.
+
+---
+
+## 🔑 Key Features
+
+### ✅ No Central Coordinator
+- Nodes operate independently without any master or central server.
+- This improves fault tolerance and avoids single points of failure.
+
+### ✅ Mutual Discovery
+- Nodes automatically discover each other using the built-in **discovery process**.
+- Once discovered, they can send/receive mesages directly.
+
+### ✅ Bidirectional Messaging
+- Every node can publish and subscribe, enabling **flexible two-way communication**.
+
+### ✅ Scalable and Efficient
+- As nodes are added, the system scales without requiring structural changes.
+- Ideal for **distributed systems**, such as robotic networks and IoT environments.
+
+### ✅ Fault Tolerant
+- If a node fails, others continue operating independently.
+- Enhances the **reliability** of the entire system.
+
+### Summary
+Peer-to-peer communication allows for efficient, fast, and resilient communication among nodes. Its decentralized nature is especially beneficial for ROS 2 and other real-time, distributed applications where latency and scalability are critical.
+
+## ❓ Why ROS 2 Dropped the ROS 1 Master
+ROS 1 used a centralized ROS Master for node registration and communication setup. However this created a bottleneck, i.e a single node failure could stall the entire system. ROS 2 replaced it with DDS-based peer-to-peer communication to achieve:
+- Better fault tolerance
+- Real-time performance
+- Easier deployment across multiple machines
+- Enhanced security and discovery features
+
+
+
+
+
+
 
 ---
 
