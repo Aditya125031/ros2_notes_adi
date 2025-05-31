@@ -226,3 +226,27 @@ ros2 launch your_package_name your_launch_nanme.py
 ```
 
 ---
+## 🌟 Problems I Faced
+
+One of the biggest challenges I encountered was **getting the launch file to actually run**.
+
+At first, I wasn't sure how to organize my launch file. After watching tutorials and reading documentation, I learned that I had two options:
+- Create a **separate package** just for the launch file, or
+- Place the launch file **within the publisher package** itself.
+
+I initially tried creating a **separate launch package**, but whenever I tried to run it, I got the error:  
+> **"no executables found"**
+
+I spent an entire day stuck at this point, unsure what I was doing wrong. I reached out to my mentor, and although we tried a few things, the issue persisted.
+
+Eventually, I decided to **move the launch file into the same package** as the publisher node. I updated both the `CMakeLists.txt` and the `package.xml` files accordingly.
+
+Later, I discovered the root of the issue:  
+There were a few **mistakes in my CMake configuration and some naming inconsistencies**. Once I corrected those, everything finally started working — and I was honestly relieved.
+
+Although I'm still not completely confident with writing launch files, this experience taught me a lot about:
+- Package structure
+- How small errors (like naming issues) can break things
+
+I know I need more practice, but now I feel much more comfortable debugging and figuring things out step by step.
+
