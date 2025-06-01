@@ -8,9 +8,9 @@ class randomnumberpublisher : public rclcpp::Node
         randomnumberpublisher()
         :Node("number_publisher")
         {
-    	    rclcpp::QoS qos_profile(10); 
- 	    qos_profile.reliable();   
-	    qos_profile.durability_volatile();
+    	    rclcpp::QoS qos_profile = rclcpp::QoS(rclcpp::KeepLast(10));
+ 	    auto qos_profile = rclcpp::QoS(10).reliable();
+	    auto qos_profile = rclcpp::QoS(10).best_effort();
 	    
             publisher_=this->create_publisher<std_msgs::msg::Int32>("number",10);
             timer_=this->create_wall_timer
