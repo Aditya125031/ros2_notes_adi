@@ -256,3 +256,7 @@ Although I'm still not completely confident with writing launch files, this expe
 
 I know I need more practice, but now I feel much more comfortable debugging and figuring things out step by step.
 
+# Adding a QOS profile
+As i already knew what a QOS profile  is and it's fucntion, i just needed to know how do i implement it.
+Implementation was quite easy as i just needed to add some predefined lines and the header #include "rclcpp/qos.hpp"
+
