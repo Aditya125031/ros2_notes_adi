@@ -139,8 +139,11 @@ ROS 1 used a centralized ROS Master for node registration and communication setu
 - Easier deployment across multiple machines
 - Enhanced security and discovery features
 
-# Major differneces in ROS1 and ROS2 are in the link below
-## 
+# 🔁 Major Differences Between ROS 1 and ROS 2
+
+## I have written a brief comparision between ROS1 and ROS2 in the link below:
+👉 [ros1v2.md on GitHub](https://github.com/Aditya125031/ros2_notes_adi/blob/main/ros1v2.md)
+
 
 # 🧭 Discovery Server in ROS 2
 
