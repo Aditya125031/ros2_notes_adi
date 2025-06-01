@@ -163,7 +163,7 @@ In ROS 2, nodes need to **discover each other** in order to **share data**—pub
 
 ## 🤔 Why Use a Discovery Server if We Already Have Peer-to-Peer Communication?
 
-That’s a great question!
+A question that came to my mind
 
 While peer-to-peer discovery works, it involves **broadcasting discovery messages to all nodes**, which:
 
@@ -204,8 +204,8 @@ This greatly simplifies the process of running and testing complex ROS applicati
 ## 🚀 Basic Structure of a Launch File
 
 ---
-##Making a launch file
-###I watched some videos regarding launch files and learnt the basic structure of a launch file.
+## Making a launch file
+### I watched some videos regarding launch files and learnt the basic structure of a launch file.
 
 ## ✅ ROS 2 (Python)
 
@@ -217,7 +217,7 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='your_package_name',
-            executable='your_executable_name',
+            executable='your_executable_name',#HERE WE NEE TO ADD OUR PUBLISHER AND SUBSCRIBER IN AN OTHER SIMILAR NODE
             name='optional_node_name'
         )
     ])
