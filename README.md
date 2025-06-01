@@ -260,3 +260,5 @@ I know I need more practice, but now I feel much more comfortable debugging and 
 As i already knew what a QOS profile  is and it's fucntion, i just needed to know how do i implement it.
 Implementation was quite easy as i just needed to add some predefined lines and the header #include "rclcpp/qos.hpp"
 
+But i really wasn't able to get the gist of usage of QOS.
+I havent cross checked whether QOS is working properly or not.
