@@ -8,9 +8,9 @@ public:
   RandomNumberSubscriber()
   : Node("number_subscriber")
   {
-    rclcpp::QoS qos_profile(10);
-    qos_profile.reliable();
-    qos_profile.durability_volatile();
+    rclcpp::QoS qos_profile = rclcpp::QoS(rclcpp::KeepLast(10));
+ 	    auto qos_profile = rclcpp::QoS(10).reliable();
+	    auto qos_profile = rclcpp::QoS(10).best_effort();
 
     subscription_ = this->create_subscription<std_msgs::msg::Int32>(
       "number", 10,
